@@ -8,11 +8,6 @@ async function run() {
     items.map(({ emailMessageId }) => getBroadcastEmailDetails(emailMessageId))
   )
 
-  // Calling Promise.all on a lot of items may not be efficient
-  // we can discuss a possible solution below...
-  // [ ....... ]
-  // [[ .. ], [ .. ], [ .. ], [ . ]]
-
   const sortedEmails = emailStats.sort((em1, em2) => em2.emailMessageId - em1.emailMessageId)
 
   const results = sortedEmails.map((email) => {
