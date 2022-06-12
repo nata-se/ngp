@@ -14,7 +14,7 @@ function makeGetRequest(path) {
         password: password
       },
     }
-    request(options, function (err, _, body) {
+    request.get(`${BASE_URL}/${path}`, options, function (err, req, body) {
       if (err) {
         return reject(err)
       }

@@ -4,12 +4,15 @@
   "description": "",
   "main": "ngpvan.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "jest": "^28.1.1"
   }
 }
