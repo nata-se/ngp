@@ -28,6 +28,7 @@ async function generate() {
   ].join('\n')
 
   fs.writeFileSync('EmailReport.csv', content)
+  console.log('Email info is ready and packed in EmailReport.csv')
 }
 
 module.exports = generate

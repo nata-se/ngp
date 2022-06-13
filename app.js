@@ -1,3 +1,3 @@
 const generator = require('./generator')
 
-generator().catch((error) => error)
+generator().catch((error) => console.log(error))
